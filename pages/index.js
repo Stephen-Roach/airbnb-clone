@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import { useDebugValue } from 'react';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
 import LardCard from '../components/LardCard';
 import MediumCard from '../components/MediumCard';
 import SmallCard from '../components/SmallCard';
+import Footer from '../components/Footer';
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -47,6 +47,9 @@ export default function Home({ exploreData, cardsData }) {
           buttonText='Get Inspired'
         />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
