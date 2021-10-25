@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useDebugValue } from 'react';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
+import LardCard from '../components/LardCard';
 import MediumCard from '../components/MediumCard';
 import SmallCard from '../components/SmallCard';
 
@@ -38,6 +39,13 @@ export default function Home({ exploreData, cardsData }) {
             ))}
           </div>
         </section>
+
+        <LardCard
+          img='https://links.papareact.com/4cj'
+          title='The Greatest Outdoors'
+          description='Wishlists curated by Airbnb.'
+          buttonText='Get Inspired'
+        />
       </main>
     </div>
   );
